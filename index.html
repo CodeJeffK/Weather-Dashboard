@@ -13,36 +13,37 @@
 <body>
   <!-- Create containers to fill with weather data -->
   <h1>Weather Dashboard</h1>
-  <!-- search input -->
-  <div>
-    <input type="text" placeholder="Seattle">
-    <!-- search button -->
-    <div>
-      <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+  <div class="container-fluid mainCon">
+    <div class="row">
+      <div class="col-12 col-md-3 col-xl-3 colOne">
+        <label>Search for a City:</label>
+        <!-- search input -->
+        <div class="input-group mb-3">
+          <input type="text" class="form-control textVal" placeholder="Seattle">
+          <!-- search button -->
+          <div class="input-group-append btnPar">
+            <button class="btn btn-primary search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- container for search history -->
-  <div></div>
+  <div class="container history"></div>
 
   <!-- container and cards for weather data -->
-  <div class="weather data">
+  <div class="col-12 col-md-9 col-xl-9 colTwo">
     <div class="weather today">
-      <div class="card" style="max-width: 400px;">
-        <h2 class="currentCityName"></h2>
-        <h3 class="currentDate"></h3>
-        <div class="currentCityData"></div>
+      <div class="card bg-light mb-3" style="max-width: 400px;">
+        <h2 class="card-header currentCityName"></h2>
+        <h3 class=" card-header currentDate"></h3>
+        <img class="icons">
+        <div class=" card-body currentCityData"></div>
       </div>
     </div>
-    <div class="forecast"></div>
+    <div class="row forecast"></div>
   </div>
-
-
-
-
-
-
-
 
 
   <!-- scripts -->
