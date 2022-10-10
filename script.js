@@ -35,9 +35,9 @@ function weatherToday () {
 		let cityLon = response.coord.lon;
 		let cityLat = response.coord.lat;
     // function for UVI
-		let weatherUVI = `https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=hourly,daily,minutely&appid=${key}`;
+		let weatherUvi = `https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=hourly,daily,minutely&appid=${key}`;
         $.ajax({
-            url: weatherUVI,
+            url: weatherUvi,
             method: 'GET',
         }).then(function (response) {
             let pElUvi = $('<p>').text(`UV Index: `);
@@ -66,9 +66,9 @@ function weatherToday () {
 
 // Function for 5 day weather forecast
 function forecast () {
-    let forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`;
+    let forecastFive = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`;
     $.ajax({
-        url: forecast,
+        url: forecastFive,
         method: 'GET',
     }).then(function (response) {
         let forecastArray = response.list;

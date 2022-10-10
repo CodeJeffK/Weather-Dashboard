@@ -1,0 +1,56 @@
+.green{
+    background-color: rgb(108, 231, 108);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: rgb(241, 80, 80);
+}
+
+.purple {
+    background-color: rgb(177, 56, 177);
+}
+
+h1 {
+    background-color: rgb(118, 154, 209);
+    text-align: center;
+    font-weight: bolder;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.colOne {
+    background-color: white;
+}
+
+.colTwo {
+    background-color: white;
+}
+
+.histBtnRow {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icons {
+    height: 70px;
+    width: 70px;
+}
+
+.currentDate {
+    font-size: 20px;
+}
